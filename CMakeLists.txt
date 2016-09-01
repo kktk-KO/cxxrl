@@ -8,6 +8,9 @@ set(CMAKE_CXX_FLAGS_RELEASE "-O2 -s -DNDEBUG -march=native")
 
 include_directories(include)
 
+## src
+add_subdirectory(src)
+
 ## test
 
 if(NOT without-test)
