@@ -58,7 +58,6 @@ int main (int argc, char ** argv) {
   int count = std::atoi(argv[2]);
   int sample= std::atoi(argv[3]);
 
-  int n = 1;
   if (agent_name == "onpolicy") {
     proc2(montecarlo_onpolicy<environment_type>(), count, sample);
   } else if (agent_name == "ordinary-sampling") {
